@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .main {
+            height: 200px;
+            width: 200px;
+            /* background: transparent; */
+            margin: 150px auto;
+            position: relative;
+        }
+        
+        .x {
+            height: 200px;
+            width: 200px;
+            background: transparent;
+            border: 10px solid transparent;
+            border-top: 10px solid yellow;
+            border-radius: 50%;
+            padding: 15px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: p1 1s linear infinite;
+        }
+        
+        .y {
+            height: 150px;
+            width: 150px;
+            background: transparent;
+            border: 10px solid transparent;
+            border-top: 10px solid green;
+            border-radius: 50%;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            animation: p2 1.50s linear infinite;
+        }
+        
+        .z {
+            height: 100px;
+            width: 100px;
+            background: transparent;
+            border: 10px solid transparent;
+            border-top: 10px solid red;
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            animation: p1 2s linear infinite;
+        }
+        
+        @keyframes p1 {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes p2 {
+            from {
+                transform: rotate(360deg);
+            }
+            to {
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="x"></div>
+        <div class="y"></div>
+        <div class="z"></div>
+    </div>
+</body>
+
+</html>
